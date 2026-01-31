@@ -11,6 +11,7 @@
 :root {
   --background: #0f0e0d;
   --foreground: #ededed;
+  --hover-color: #ffe76e;
 }
 
 @theme inline {

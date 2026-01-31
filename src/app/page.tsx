@@ -1,7 +1,6 @@
 'use client';
 
-import Link from 'next/link';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { useTypewriter } from 'react-simple-typewriter';
 
 export default function Home() {
   const [text] = useTypewriter({
