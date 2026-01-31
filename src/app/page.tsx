@@ -12,12 +12,14 @@ export default function Home() {
 
   return (
     <div className="bg-background flex flex-col">
-      <div className="py-48 text-center">
-        <h1 className="text-9xl font-bold text-zinc-50 mb-6">
-          HEY, I'M
-        </h1>
-        <div className="text-9xl font-semibold text-zinc-300 mb-8 h-20 flex items-center justify-center">
-          {text}
+      <div className="my-48 flex flex-col items-center">
+        <div>
+          <h1 className="text-9xl font-bold text-zinc-50 mb-6 expand-mouse-circle w-[500px]">
+            HEY, I'M
+          </h1>
+          <div className="text-9xl font-semibold text-zinc-300 mb-8 h-26 w-[700px] flex items-center justify-start expand-mouse-circle">
+            {text}
+          </div>
         </div>
       </div>
       <div className="max-w-6xl px-4 py-16">
