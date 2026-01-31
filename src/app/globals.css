@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f0e0d;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -12,15 +12,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global class for expanding mouse circle on hover */
+.expand-mouse-circle {
+  /* This class is detected by the MouseFollower component */
+  /* When applied to an element, the mouse circle will expand when hovering over it */
+}
+
+/* Global class for hiding mouse circle on hover */
+.hide-mouse-circle {
+  /* This class is detected by the MouseFollower component */
+  /* When applied to an element, the mouse circle will smoothly disappear when hovering over it */
 }
