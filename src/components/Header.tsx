@@ -1,38 +1,51 @@
-import Link from 'next/link';
+'use client';
 
 export default function Header() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <header className="bg-transparent fixed top-0 left-0 right-0 z-50">
       <nav className="mx-auto px-16 py-12">
         <div className="flex items-start justify-between">
-          <Link href="/" className="text-xl font-bold text-zinc-50 hover:text-[var(--hover-color)] transition-colors hide-mouse-circle">
+          <button
+            onClick={() => scrollToSection('hero')}
+            className="text-xl font-bold text-zinc-50 hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+          >
             SN
-          </Link>
+          </button>
           <div className="flex flex-col space-y-4 text-right">
-            <Link
-              href="/about"
-              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+            <button
+              onClick={() => scrollToSection('about')}
+              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle text-left"
             >
               About Me
-            </Link>
-            <Link
-              href="/experience"
-              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+            </button>
+            <button
+              onClick={() => scrollToSection('experience')}
+              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle text-left"
             >
               Experience
-            </Link>
-            <Link
-              href="/projects"
-              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+            </button>
+            <button
+              onClick={() => scrollToSection('projects')}
+              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle text-left"
             >
               Projects
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle text-left"
             >
               Contact
-            </Link>
+            </button>
           </div>
         </div>
       </nav>
