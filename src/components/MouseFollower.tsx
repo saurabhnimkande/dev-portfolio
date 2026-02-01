@@ -57,8 +57,8 @@ export default function MouseFollower() {
     };
   }, [isClient]);
 
-  const baseCircleSize = 50; // Always use 50px base size
-  const scale = isHidden ? 0 : (isExpanded ? 6 : 1); // Scale to 0 when hidden, 1.6 when expanded
+  const baseCircleSize = 30; // Always use 50px base size
+  const scale = isHidden ? 0 : (isExpanded ? 8 : 1); // Scale to 0 when hidden, 1.6 when expanded
   const opacity = isHidden ? 0 : 1; // Fade out when hidden
 
   // Only render on client side to avoid window access issues

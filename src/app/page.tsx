@@ -14,10 +14,10 @@ export default function Home() {
     <div className="bg-background flex flex-col">
       <div className="my-48 flex flex-col items-center">
         <div>
-          <h1 className="text-9xl font-bold text-zinc-50 mb-6 expand-mouse-circle w-[500px]">
+          <h1 className="text-9xl font-bold mb-6 expand-mouse-circle w-[500px]">
             HEY, I'M
           </h1>
-          <div className="text-9xl font-semibold text-zinc-300 mb-8 h-26 w-[700px] flex items-center justify-start expand-mouse-circle">
+          <div className="text-9xl font-semibold text-[#ffe76e] mb-8 h-26 w-[700px] flex items-center justify-start expand-mouse-circle">
             {text}
           </div>
         </div>

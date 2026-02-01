@@ -11,25 +11,25 @@ export default function Header() {
           <div className="flex flex-col space-y-4 text-right">
             <Link
               href="/about"
-              className="text-zinc-400 hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
             >
               About Me
             </Link>
             <Link
               href="/experience"
-              className="text-zinc-400 hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
             >
               Experience
             </Link>
             <Link
               href="/projects"
-              className="text-zinc-400 hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
             >
               Projects
             </Link>
             <Link
               href="/contact"
-              className="text-zinc-400 hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
+              className="hover:text-[var(--hover-color)] transition-colors hide-mouse-circle"
             >
               Contact
             </Link>
